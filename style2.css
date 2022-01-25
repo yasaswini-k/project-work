@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+background-image: linear-gradient(rgba(52, 54, 66, 0.7),rgba(52, 54, 66, 0.7)) ,url("answering.jpg");
+background-position: center;
+background-size: cover;
+position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+color: #fff;
+text-decoration: none;
+/* margin-top: 0%; */
+font-size: 20px; 
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto; 
+    transition: 0.5s;
+}
+    .nav-links ul li:hover:after{
+        width: 100%;
+    }
+    .text-box{
+        width: 90%;
+        color: rgb(255, 253, 254);
+        position: absolute;
+        text-shadow: peru;
+        top: 50%;
+        left: 50%;
+        /* font-size: 50px; */
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .text-box h1{
+        font-size: 70px;
+    }
+    .text-box p{
+        margin: 10px 0 40px;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+    }
+    /* .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 5px solid rgb(8, 8, 8);
+        padding: 12px 34px;
+        font-size: 28px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+   .hero-btn:hover{
+       border: 3px solid #af7406;
+       background: #f5c56b;
+       transition: 1s;
+       /* text-emphasis-color: black; } */
+   nav .fa{
+       display:none;
+   }
+   nav .fa{
+       display: none;
+   }
+   .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    text-align: center;
+    color: hotpink;
+    font-size: 36px;
+       font-weight: 600;
+}
+.gk{
+   
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+} 
+.gk-col{
+    display: flex;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: relative;
+}  
+.gk-col img{
+    display: flex;
+    width: 100%;
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226, 121, 121, 0.63);;
+}
+
+
